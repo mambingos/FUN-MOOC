@@ -1,0 +1,7 @@
+
+
+nombre = int(input("Pour combien de personnes? "))
+oeuf = 3*nombre//4
+chocolat = 100*nombre//4
+sucre_vanillé = 1*nombre//4
+print(f"il faut {oeuf} oeufs {chocolat} g de chocolat et {sucre_vanillé} sachet de sucre vanillé")

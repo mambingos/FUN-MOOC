@@ -1,0 +1,44 @@
+import turtle
+from turtle import *
+
+import turtle
+from turtle import *
+from math import pi
+from math import cos
+from math import sin
+import random
+
+def turtle_poly(rayon,color):
+    for i in range(n):
+
+        turtle.forward(rayon)
+        turtle.left(angle)
+    turtle.end_fill()
+
+rayon = float(random.randint(1, 50))
+n = random.randint(1,100)
+angle = 360/n
+ #couleur(choix)#
+x = random.randint(0, 100)
+x = float(x)
+y = random.randint(0, 100)
+y = float(y)
+turtle.up()
+turtle.goto(x + rayon, y)
+turtle.down()
+turtle.begin_fill()
+turtle_poly(rayon,"blue")
+
+
+
+turtle.up()
+turtle.goto(-50,-50)
+turtle.down()
+turtle.begin_fill()
+turtle.goto(-100, -50)
+turtle.goto(-100,0)
+turtle.goto(-50,0)
+turtle.goto(-50,-50)
+turtle.end_fill()
+turtle.mainloop()
+

@@ -1,0 +1,17 @@
+def fibo(n):
+    """ calcule le n-ième nombre de Fibonacci, avec : n de type int et
+fibo(0) valant 0
+fibo(1) valant 1 et
+fibo(n+1) valant fibo(n-1) + fibo(n)
+si n < 0 : fibo(n) retourne None """
+    if n < 0:
+        res = None
+    elif n < 2:
+        res = n
+
+    else:
+        res = (fibo(n-1) + fibo(n-2))
+    return res
+
+for i in range (100):
+    print(fibo(i))
